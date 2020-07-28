@@ -34,3 +34,5 @@ func ToNewGBKCStr(str string,c **C.char) {
 	output := enc.ConvertString(str)
 	*c = C.CString(output)
 }
+
+func main() {}  // main 函数必须有
